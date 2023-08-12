@@ -1,0 +1,13 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen {
+  height: 384px;
+  width: 640px;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+}
