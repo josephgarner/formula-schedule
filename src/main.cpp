@@ -3,7 +3,7 @@
 #include <GxEPD2_3C.h>
 
 #include "config.h"
-#include "icons/icons_96x96.h"
+#include "icons/icons_logos.h"
 #include "renderer.h"
 
 #include FONT_HEADER
@@ -19,14 +19,14 @@ void setup() {
     initDisplay();
     do {
         display.setFont(&FONT_16pt8b);
-        drawString(10,
-                   54,
-                   "This is a test Message", LEFT);
-        drawString(10,
-                   100,
-                   "This is a second line text message and an", LEFT);
-        display.drawInvertedBitmap(100, 200, wi_smog_96x96,
-                                   96, 96, GxEPD_RED);
+        // drawString(10,
+        //            54,
+        //            "This is a test Message", LEFT);
+        // drawString(10,
+        //            100,
+        //            "This is a second line text message and an", LEFT);
+        display.drawInvertedBitmap(10, 10, F1_640x160,
+                                   640, 160, GxEPD_BLACK);
     } while (display.nextPage());
     display.powerOff();
 
